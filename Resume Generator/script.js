@@ -1,3 +1,4 @@
+
 function addNewWEField() {
     // Create a new textarea element
     const newNode = document.createElement('textarea');
@@ -157,6 +158,19 @@ function generateCV()
     str2 += '<li>' + e.value + '</li>';
   }
   document.getElementById('aqT').innerHTML=str2;
+
+  //code for setting image
+  let file=document.getElementById('imgField').files[0];
+  console.log(file);
+
+  let reader=new FileReader();
+  reader.readAsDataURL(file);
+  console.log(reader.result);
+
+  //set the image to template
+  reader.onloadend=function(){
+    document.getElementById('imgT').src=reader.result;
+  }
 
   document.getElementById('cv-form').style.display='none';
   document.getElementById('cv-template').style.display='block'

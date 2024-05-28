@@ -24,7 +24,7 @@
 
                 <div class="form-group">
                     <label for="nameField">Name:</label>
-                    <input type="text" id="nameField" placeholder="ex: John Smith" class="form-control" />
+                    <input type="text" id="nameField" placeholder="ex: John Smith" class="form-control" required/>
                 </div>
 
                 <div class="form-group mt-2">
@@ -37,10 +37,16 @@
                     <textarea id="addressField" placeholder="Enter Here" class="form-control" rows="2"></textarea>
                 </div>
 
+                <!-- adding photo to the cv -->
+                <div class="form-group mt-3">
+                    <label for="">Select your photo</label>
+                    <input id="imgField" type="file" class="form-control" required>
+                </div>
+
                 <p class="text-secondary my-3">------ Important Links ------</p>
                 <div class="form-group mt-1">
                     <label for="githubField">GitHub link:</label>
-                    <input type="text" id="githubField" placeholder="Enter Here" class="form-control" />
+                    <input type="text" id="githubField" placeholder="Enter Here" class="form-control" required/>
                 </div>
                 <div class="form-group mt-2">
                     <label for="portfolioField">Portfolio:</label>
@@ -48,14 +54,9 @@
                 </div>
                 <div class="form-group mt-2">
                     <label for="linkedinField">LinkedIn:</label>
-                    <input type="text" id="linkedinField" placeholder="Enter Here" class="form-control" />
+                    <input type="text" id="linkedinField" placeholder="Enter Here" class="form-control" required />
                 </div>
 
-                <!-- new textarea  -->
-
-                <div class="container mt-1" id="lnkAddButton">
-                    <button class="btn btn-primary">Add</button>
-                </div>
 
             </div>
             <div class="col-md-6">
@@ -64,7 +65,7 @@
 
                 <div class="form-group mt-2">
                     <label for="">Objective:</label>
-                    <textarea placeholder="Enter Here" class="form-control objectiveField"></textarea>
+                    <textarea placeholder="Enter Here" class="form-control objectiveField" re></textarea>
                 </div>
 
                 <div class="form-group mt-2" id="project">
@@ -114,7 +115,10 @@
         <div class="row">
             <div class="col-md-4 text-center py-5 background">
                 <!-- first col -->
-                <img src="Default_pfp.svg.webp" class="img-fluid myimg" alt="Responsive image" />
+                <img src="Default_pfp.svg.webp" 
+                class="img-fluid myimg" 
+                id="imgT"
+                alt="" />
 
                 <div class="container"></div>
                 <p id="nameT1">Lorem ipsum dolor</p>
