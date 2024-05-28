@@ -1,0 +1,13 @@
+ #cv-form{
+    background-color: beige;
+}
+#cv-template{
+    display: none;
+}
+.myimg{
+    width: 200px;
+}
+
+.background{
+    background-color: cadetblue;
+}
