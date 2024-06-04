@@ -1,8 +1,10 @@
  #cv-form{
-    background-color: rgb(255, 255, 240);
+    background-color: rgb(227, 227, 207);
+    width: 1500px;
 }
 #cv-template{
     display: none;
+    
 }
 .myimg{
     width: 200px;
@@ -13,4 +15,8 @@
 .background{
     background-color: cadetblue;
     color: azure;
+}
+
+.btn-lg{
+    margin-bottom: 15px;
 }
